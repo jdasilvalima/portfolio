@@ -10,6 +10,8 @@ This is a personal portfolio to showcase my projects, skills, and services.
 
 ### I.2 Goals
 WIP
+- Learn more about [Github Actions](https://github.com/features/actions)
+- Learn more about [NuxtDevTools](https://devtools.nuxt.com/)
 
 ## II. PROJECT SETUP
 ### II.1 Requirements and Instructions
