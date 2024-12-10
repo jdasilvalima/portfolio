@@ -4,3 +4,7 @@
     <NuxtWelcome />
   </div>
 </template>
+
+<script>
+console.log('test');
+</script>

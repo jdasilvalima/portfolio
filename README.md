@@ -29,6 +29,14 @@ Build and run locally :
     docker run -p 3000:3000 --rm --name jd-portfolio-ctn jd-portfolio-img
 ```
 
+### II.2 Run local tests
+[Nuxt Eslint](https://eslint.nuxt.com/)
+```sh
+    npx @eslint/config-inspector
+    or
+    npm run lint
+```
+
 ## II.2 APPLICATION ARCHITECTURE
 WIP
 
