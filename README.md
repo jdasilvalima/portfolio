@@ -4,6 +4,9 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jdasilvalima/portfoliov2?style=for-the-badge)
 [![GitHub last commit](https://img.shields.io/github/last-commit/jdasilvalima/portfoliov2?style=for-the-badge)](https://github.com/jdasilvalima/portfoliov2/commits)
 
+[![Build](https://github.com/jdasilvalima/portfoliov2/actions/workflows/nuxtjs.yml/badge.svg)](https://github.com/jdasilvalima/portfoliov2/actions)
+[![Security](https://github.com/jdasilvalima/portfoliov2/actions/workflows/eslint.yml/badge.svg)](https://github.com/jdasilvalima/portfoliov2/actions)
+
 ## I. PROJECT DESCRIPTION
 ### I.1 Introduction
 This is a personal portfolio to showcase my projects, skills, and services.
@@ -11,7 +14,7 @@ This is a personal portfolio to showcase my projects, skills, and services.
 ### I.2 Goals
 WIP
 - Learn more about [Github Actions](https://github.com/features/actions)
-- Learn more about [NuxtDevTools](https://devtools.nuxt.com/)
+- Learn more about [Nuxt](https://nuxt.com/) and [NuxtDevTools](https://devtools.nuxt.com/)
 
 ## II. PROJECT SETUP
 ### II.1 Requirements and Instructions
@@ -115,3 +118,5 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github
