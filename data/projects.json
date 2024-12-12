@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Project One",
+    "color": "#F7B500",
+    "images": ["/img/main/project1.jpg", "/img/main/project2.jpg", "/img/main/project3.jpg"],
+    "introduction": "A brief introduction to Project One and its key features.",
+    "goals": "The main objectives and achievements of this project.",
+    "technologies": ["Vue.js", "Node.js", "MongoDB"],
+    "github": "https://github.com/username/project-one",
+    "website": "https://project-one.com"
+  },
+  {
+    "id": 2,
+    "name": "Project Two",
+    "color": "#4B4BF7",
+    "images": ["/img/main/project2.jpg", "/img/main/project2-2.jpg"],
+    "introduction": "Project Two intro: An innovative solution for modern problems.",
+    "goals": "Project Two goals: Streamline processes and improve efficiency.",
+    "technologies": ["Vue", "Tailwind"],
+    "github": "https://github.com/username/project-two",
+    "website": "https://project-two.com"
+  },
+  {
+    "id": 3,
+    "name": "Project Three",
+    "color": "#FF4B1F",
+    "images": ["/img/main/project3.jpg", "/img/main/project3-2.jpg"],
+    "introduction": "Project Three intro: Revolutionizing user experiences.",
+    "goals": "Project Three goals: Create intuitive and responsive interfaces.",
+    "technologies": ["Nuxt", "Pinia"],
+    "github": "https://github.com/username/project-three",
+    "website": "https://project-three.com"
+  },
+  {
+    "id": 4,
+    "name": "Project Four",
+    "color": "#4F5D4F",
+    "images": ["/img/main/project4.jpg", "/img/main/project4-2.jpg"],
+    "introduction": "Project Four intro: Pushing the boundaries of web development.",
+    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
+    "technologies": ["React", "Redux"],
+    "github": "https://github.com/username/project-four",
+    "website": "https://project-four.com"
+  },
+  {
+    "id": 5,
+    "name": "Project Five",
+    "color": "#E0E0E0",
+    "images": ["/img/main/project1.jpg", "/img/main/project4-2.jpg"],
+    "introduction": "Project Four intro: Pushing the boundaries of web development.",
+    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
+    "technologies": ["React", "Redux"],
+    "github": "https://github.com/username/project-four",
+    "website": "https://project-four.com"
+  },
+  {
+    "id": 6,
+    "name": "Project Six",
+    "color": "#FFA07A",
+    "images": ["/img/main/project2.jpg", "/img/main/project4-2.jpg"],
+    "introduction": "Project Four intro: Pushing the boundaries of web development.",
+    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
+    "technologies": ["React", "Redux"],
+    "github": "https://github.com/username/project-four",
+    "website": "https://project-four.com"
+  },
+  {
+    "id": 7,
+    "name": "Project Seven",
+    "color": "#20B2AA",
+    "images": ["/img/main/project3.jpg", "/img/main/project4-2.jpg"],
+    "introduction": "Project Four intro: Pushing the boundaries of web development.",
+    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
+    "technologies": ["React", "Redux"],
+    "github": "https://github.com/username/project-four",
+    "website": "https://project-four.com"
+  },
+  {
+    "id": 8,
+    "name": "Project Eight",
+    "color": "#DDA0DD",
+    "images": ["/img/main/project4.jpg", "/img/main/project4-2.jpg"],
+    "introduction": "Project Four intro: Pushing the boundaries of web development.",
+    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
+    "technologies": ["React", "Redux"],
+    "github": "https://github.com/username/project-four",
+    "website": "https://project-four.com"
+  }
+]
