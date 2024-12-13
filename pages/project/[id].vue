@@ -8,7 +8,7 @@
           :alt="`${project.name} - Image ${currentImageIndex + 1}`" 
           class="w-full h-full object-cover"
         />
-        
+
         <!-- Gallery Navigation -->
         <button 
           @click="previousImage" 
@@ -19,9 +19,9 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        
-        <button 
-          @click="nextImage" 
+
+        <button
+          @click="nextImage"
           class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-200 transition-colors"
           aria-label="Next image"
         >
@@ -126,7 +126,7 @@ import { useRoute } from 'vue-router'
 import projectsData from '~/data/projects.json'
 
 const route = useRoute()
-const currentImageIndex = ref(0)
+const currentImageIndex = ref(1)
 const projects = ref(projectsData)
 
 const project = computed(() => {

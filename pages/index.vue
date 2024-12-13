@@ -39,14 +39,7 @@
           <div
             class="w-2/5 h-2/5 rounded-full transition-all duration-300 flex items-center justify-center overflow-hidden"
             :class="currentProject && currentProject.id === project.id ? 'bg-white' : 'bg-black'"
-          >
-            <img
-              v-if="currentProject && currentProject.id === project.id"
-              :src="`/img/pattern/pattern${project.id}.jpg`"
-              alt="Project Pattern"
-              class="w-full h-full object-cover"
-            >
-          </div>
+          />
         </div>
         <div
           v-if="currentProject && currentProject.id === project.id"
