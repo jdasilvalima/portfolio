@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col sm:flex-row flex-grow pt-[64px]">
+  <div class="flex flex-col sm:flex-row flex-grow pt-[60px]">
     <!-- Left Side - Static for tablet and desktop -->
-    <div class="w-full sm:w-1/2 sm:h-[calc(100vh-64px)] sm:overflow-hidden flex flex-col">
+    <div class="w-full sm:w-1/2 sm:h-[calc(100vh-60px)] sm:overflow-hidden flex flex-col">
       <!-- Developer Info -->
-      <div class="h-1/2 p-4 sm:p-8 flex flex-col justify-end">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-2">
-          FirstName LastName
+      <div class="h-1/2 p-4 sm:p-8 flex flex-col sm:mt-6">
+        <h2 class="text-2xl sm:text-4xl font-bold mb-2">
+          Jade DA SILVA LIMA
         </h2>
         <p class="text-lg sm:text-xl text-gray-600">
           Software Developer
@@ -13,12 +13,16 @@
       </div>
       <!-- Project Image -->
       <div class="h-1/2 bg-gray-200">
-        <img :src="currentProject ? currentProject.images[0] : '/img/main/default.jpg'" alt="Project Preview" class="w-full h-full object-cover" />
+        <img
+          :src="currentProject ? currentProject.images[0] : '/img/main/default.jpg'"
+          alt="Project Preview"
+          class="w-full h-full object-cover"
+        >
       </div>
     </div>
 
     <!-- Right Side - Project Squares -->
-    <div class="w-full sm:w-1/2 sm:h-[calc(100vh-64px)] sm:overflow-y-auto flex flex-wrap">
+    <div class="w-full sm:w-1/2 sm:h-[calc(100vh-60px)] sm:overflow-y-auto flex flex-wrap">
       <NuxtLink
         v-for="project in projects"
         :key="project.id"
@@ -38,17 +42,22 @@
           >
             <img
               v-if="currentProject && currentProject.id === project.id"
-              :src="`/img/pattern/pattern${(project.id % 5) + 1}.jpg`"
+              :src="`/img/pattern/pattern${project.id}.jpg`"
               alt="Project Pattern"
               class="w-full h-full object-cover"
-            />
+            >
           </div>
         </div>
         <div
           v-if="currentProject && currentProject.id === project.id"
-          class="absolute bottom-4 left-4 text-white transition-opacity duration-300 text-xl sm:text-2xl font-semibold"
+          class="absolute bottom-4 left-4 text-white transition-opacity duration-300 flex flex-col"
         >
-          {{ project.name }}
+          <span class="text-xl sm:text-2xl font-semibold">
+            {{ project.name }}
+          </span>
+          <span>
+            {{ project.type }}
+          </span>
         </div>
       </NuxtLink>
     </div>

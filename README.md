@@ -4,9 +4,6 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jdasilvalima/portfoliov2?style=for-the-badge)
 [![GitHub last commit](https://img.shields.io/github/last-commit/jdasilvalima/portfoliov2?style=for-the-badge)](https://github.com/jdasilvalima/portfoliov2/commits)
 
-[![Build](https://github.com/jdasilvalima/portfoliov2/actions/workflows/nuxtjs.yml/badge.svg)](https://github.com/jdasilvalima/portfoliov2/actions)
-[![Security](https://github.com/jdasilvalima/portfoliov2/actions/workflows/eslint.yml/badge.svg)](https://github.com/jdasilvalima/portfoliov2/actions)
-
 ## I. PROJECT DESCRIPTION
 ### I.1 Introduction
 This is a personal portfolio to showcase my projects, skills, and services.

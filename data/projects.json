@@ -1,90 +1,74 @@
 [
   {
     "id": 1,
-    "name": "Project One",
+    "name": "Brain Sync AI",
+    "type": "Personnal Project",
     "color": "#F7B500",
     "images": ["/img/main/project1.jpg", "/img/main/project2.jpg", "/img/main/project3.jpg"],
-    "introduction": "A brief introduction to Project One and its key features.",
-    "goals": "The main objectives and achievements of this project.",
-    "technologies": ["Vue.js", "Node.js", "MongoDB"],
-    "github": "https://github.com/username/project-one",
-    "website": "https://project-one.com"
+    "introduction": "Web application that uses AI to create personalized learning paths, flashcards, and quizzes for users.",
+    "goals": "This project is designed as a personal learning initiative with the following goals: Deepen knowledge in Artificial Intelligence with a particular focus on developing localized solutions | Learn frontend development with React | Explore backend development using Python and Flask.",
+    "technologies": ["TypeScript", "React", "Python (Flask)", "PostgreSQL", "Docker", "Llama3.2"],
+    "github": "https://github.com/jdasilvalima/brainSync",
+    "website": null
   },
   {
     "id": 2,
-    "name": "Project Two",
+    "name": "EC Portfolio",
+    "type": "Client Project",
     "color": "#4B4BF7",
     "images": ["/img/main/project2.jpg", "/img/main/project2-2.jpg"],
-    "introduction": "Project Two intro: An innovative solution for modern problems.",
-    "goals": "Project Two goals: Streamline processes and improve efficiency.",
-    "technologies": ["Vue", "Tailwind"],
-    "github": "https://github.com/username/project-two",
-    "website": "https://project-two.com"
+    "introduction": "Website to showcase a photographer's work.",
+    "goals": "The goal for this project was to create an interactive website while deepening my knowledge of modern frontend tools and techniques : Enhance frontend development skills using Nuxt.js | Explore smooth scrolling techniques with Lenis | Implement dynamic animations with GSAP to create an engaging user experience | Get started with WebGL and Three.js to explore 3D web graphics.",
+    "technologies": ["Nuxt.js", "Gsap", "Lenis", "Three.js"],
+    "github": "https://github.com/jdasilvalima/ecportfolio",
+    "website": "https://jdasilvalima.github.io/ecportfolio/"
   },
   {
     "id": 3,
-    "name": "Project Three",
+    "name": "Whisked DC",
+    "type": "Client Project",
     "color": "#FF4B1F",
     "images": ["/img/main/project3.jpg", "/img/main/project3-2.jpg"],
-    "introduction": "Project Three intro: Revolutionizing user experiences.",
-    "goals": "Project Three goals: Create intuitive and responsive interfaces.",
-    "technologies": ["Nuxt", "Pinia"],
-    "github": "https://github.com/username/project-three",
-    "website": "https://project-three.com"
+    "introduction": "Designed and implemented a compliance traceability system for an industrial baking company, ensuring accurate tracking and adherence to regulatory standards.",
+    "goals": "Led the end-to-end development of a cost-effective traceability system, from gathering client requirements to training end users. The solution integrated seamlessly with the client’s existing Google-based workflows, featuring custom forms, logs, and dashboards. It improved product traceability speed by 60% while staying within budget.",
+    "technologies": ["Google Sheets", "Apps Script", "Looker Studio "],
+    "github": null,
+    "website": null
   },
   {
     "id": 4,
-    "name": "Project Four",
+    "name": "Meritis",
+    "type": "Work Project",
     "color": "#4F5D4F",
     "images": ["/img/main/project4.jpg", "/img/main/project4-2.jpg"],
-    "introduction": "Project Four intro: Pushing the boundaries of web development.",
-    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
-    "technologies": ["React", "Redux"],
-    "github": "https://github.com/username/project-four",
-    "website": "https://project-four.com"
+   "introduction": "Project Four intro: Pushing the boundaries of web development.",
+    "goals": "Contributed to the architecture and development of scalable microservices, creating Dockerized connectors (C# | Kafka) to integrate HR data across 10 platforms like Salesforce, SmartRecruiters, TalentSoft and SharePoint.\n\n  ● Designed and implemented CI/CD pipelines in Azure DevOps using tools like Gitleaks-Check, OWASP Dependency-Check, and SonarQube to automate the detection of vulnerabilities in 100% of packages and reduce code smells by 40%.",
+    "technologies": ["TypeScript", "Vue.js", "C#", "Vue.js", ".NET", "Node.js", "SQL", "NoSQL", "Docker", "Kafka", "Azure"],
+    "github": null,
+    "website": null
   },
   {
     "id": 5,
-    "name": "Project Five",
+    "name": "Dawan",
+    "type": "Work Project",
     "color": "#E0E0E0",
     "images": ["/img/main/project1.jpg", "/img/main/project4-2.jpg"],
     "introduction": "Project Four intro: Pushing the boundaries of web development.",
-    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
-    "technologies": ["React", "Redux"],
-    "github": "https://github.com/username/project-four",
-    "website": "https://project-four.com"
+    "goals": "Contributed to the architecture and development of scalable microservices, creating Dockerized connectors (C# | Kafka) to integrate HR data across 10 platforms like Salesforce, SmartRecruiters, TalentSoft and SharePoint.\n\n  ● Designed and implemented CI/CD pipelines in Azure DevOps using tools like Gitleaks-Check, OWASP Dependency-Check, and SonarQube to automate the detection of vulnerabilities in 100% of packages and reduce code smells by 40%.",
+    "technologies": ["TypeScript", "Vue.js", "C#", "Vue.js", ".NET", "Node.js", "SQL", "NoSQL", "Docker", "Kafka", "Azure"],
+    "github": null,
+    "website": null
   },
   {
     "id": 6,
-    "name": "Project Six",
+    "name": "Origins Track",
+    "type": "Personnal Project",
     "color": "#FFA07A",
     "images": ["/img/main/project2.jpg", "/img/main/project4-2.jpg"],
-    "introduction": "Project Four intro: Pushing the boundaries of web development.",
-    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
-    "technologies": ["React", "Redux"],
-    "github": "https://github.com/username/project-four",
-    "website": "https://project-four.com"
-  },
-  {
-    "id": 7,
-    "name": "Project Seven",
-    "color": "#20B2AA",
-    "images": ["/img/main/project3.jpg", "/img/main/project4-2.jpg"],
-    "introduction": "Project Four intro: Pushing the boundaries of web development.",
-    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
-    "technologies": ["React", "Redux"],
-    "github": "https://github.com/username/project-four",
-    "website": "https://project-four.com"
-  },
-  {
-    "id": 8,
-    "name": "Project Eight",
-    "color": "#DDA0DD",
-    "images": ["/img/main/project4.jpg", "/img/main/project4-2.jpg"],
-    "introduction": "Project Four intro: Pushing the boundaries of web development.",
-    "goals": "Project Four goals: Implement cutting-edge technologies for optimal performance.",
-    "technologies": ["React", "Redux"],
-    "github": "https://github.com/username/project-four",
-    "website": "https://project-four.com"
+    "introduction": "Transparent and secure food traceability with a blockchain platform.",
+    "goals": "Transparent and secure food traceability. The 'OriginsTrack' project aims to create a blockchain platform that will allow consumers to trace the provenance of their food back to its source.",
+    "technologies": ["Next.js", "Ethereum", "Solidity"],
+    "github": "https://github.com/jdasilvalima/foodtraceability",
+    "website": null
   }
 ]

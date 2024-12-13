@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col sm:flex-row pt-[64px] min-h-[calc(100vh-64px)]">
-    <div v-if="project" class="w-full flex flex-col sm:flex-row">
+  <div class="flex flex-col min-h-screen pt-[60px]">
+    <div v-if="project" class="flex-grow flex flex-col sm:flex-row justify-items-stretch">
       <!-- Left Side - Gallery -->
-      <div class="w-full sm:w-1/2 h-[50vh] sm:h-[calc(100vh-64px)] relative">
+      <div class="w-full sm:w-1/2 h-[50vh] sm:h-[calc(100vh-60px)] relative">
         <img 
           :src="project.images[currentImageIndex]" 
           :alt="`${project.name} - Image ${currentImageIndex + 1}`" 
@@ -32,81 +32,88 @@
       </div>
 
       <!-- Right Side - Project Info -->
-      <div class="w-full sm:w-1/2 p-8 flex flex-col sm:mt-12">
-        <div class="flex-grow">
-          <!-- Project Title -->
-          <h1 class="text-4xl font-bold mb-12">{{ project.name }}</h1>
+      <div class="w-full sm:w-1/2 p-8 flex flex-col sm:mt-12 justify-between">
+        <div class="max-w-md mx-auto w-full">
+          <div class="flex-grow">
+            <!-- Project Title -->
+            <h1 class="text-4xl font-bold mb-8">{{ project.name }}</h1>
 
-          <!-- Project Links -->
-          <div class="flex gap-6 mb-12">
-            <a 
-              :href="project.github" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="text-black hover:opacity-70 transition-opacity"
-            >
-              GITHUB
-            </a>
-            <a 
-              :href="project.website" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="text-black hover:opacity-70 transition-opacity"
-            >
-              WEBSITE
-            </a>
-          </div>
+            <!-- Project Details -->
+            <div class="space-y-8">
+              <section>
+                <h2 class="text-sm font-bold mb-4">INTRODUCTION</h2>
+                <p class="text-gray-600 text-justify">[{{ project.type }}] - {{ project.introduction }}</p>
+              </section>
 
-          <!-- Project Details -->
-          <div class="space-y-8">
-            <section>
-              <h2 class="text-sm font-bold mb-4">INTRODUCTION</h2>
-              <p class="text-gray-600">{{ project.introduction }}</p>
-            </section>
+              <section>
+                <h2 class="text-sm font-bold mb-4">GOALS</h2>
+                <p class="text-gray-600 text-justify">{{ project.goals }}</p>
+              </section>
 
-            <section>
-              <h2 class="text-sm font-bold mb-4">GOALS</h2>
-              <p class="text-gray-600">{{ project.goals }}</p>
-            </section>
+              <section>
+                <h2 class="text-sm font-bold mb-4">TECHNOLOGIES</h2>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    v-for="tech in project.technologies"
+                    :key="tech"
+                    class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                  >
+                    {{ tech }}
+                  </span>
+                </div>
+              </section>
 
-            <section>
-              <h2 class="text-sm font-bold mb-4">TECHNOLOGIES</h2>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span 
-                  v-for="tech in project.technologies" 
-                  :key="tech"
-                  class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+              <!-- Project Links -->
+              <div class="flex gap-6">
+                <a
+                  v-if="project.github"
+                  :href="project.github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-black hover:opacity-70 transition-opacity"
                 >
-                  {{ tech }}
-                </span>
+                  GITHUB
+                </a>
+                <a
+                  v-if="project.website"
+                  :href="project.website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-black hover:opacity-70 transition-opacity"
+                >
+                  WEBSITE
+                </a>
               </div>
-            </section>
+            </div>
           </div>
         </div>
 
         <!-- Project Navigation -->
-        <div class="flex justify-between items-center pt-8 border-t">
-          <NuxtLink 
-            v-if="previousProject"
-            :to="`/project/${previousProject.id}`"
-            class="text-black hover:opacity-70 transition-opacity"
-          >
-            ← PREVIOUS
-          </NuxtLink>
-          <div v-else></div>
-          
-          <NuxtLink 
-            v-if="nextProject"
-            :to="`/project/${nextProject.id}`"
-            class="text-black hover:opacity-70 transition-opacity"
-          >
-            NEXT →
-          </NuxtLink>
-          <div v-else></div>
+        <div class="w-full border-t">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center pt-8">
+              <NuxtLink
+                v-if="previousProject"
+                :to="`/project/${previousProject.id}`"
+                class="text-black hover:opacity-70 transition-opacity"
+              >
+                ← PREVIOUS
+              </NuxtLink>
+              <div v-else></div>
+              <NuxtLink
+                v-if="nextProject"
+                :to="`/project/${nextProject.id}`"
+                class="text-black hover:opacity-70 transition-opacity"
+              >
+                NEXT →
+              </NuxtLink>
+              <div v-else></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
+
     <div v-else class="flex-grow flex items-center justify-center">
       <p class="text-2xl text-gray-600">Project not found</p>
     </div>
@@ -142,7 +149,8 @@ const nextProject = computed(() => {
 const previousImage = () => {
   if (currentImageIndex.value > 0) {
     currentImageIndex.value--
-  } else {
+  }
+  else {
     currentImageIndex.value = project.value.images.length - 1
   }
 }
@@ -150,7 +158,8 @@ const previousImage = () => {
 const nextImage = () => {
   if (currentImageIndex.value < project.value.images.length - 1) {
     currentImageIndex.value++
-  } else {
+  }
+  else {
     currentImageIndex.value = 0
   }
 }
