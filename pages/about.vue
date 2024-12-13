@@ -3,7 +3,7 @@
     <!-- Left Side - Image -->
     <div class="w-full sm:w-1/2 h-[50vh] sm:h-[calc(100vh-60px)] relative">
       <img
-        src="/img/main/default.jpg"
+        src="/img/main/default.png"
         alt="Profile Image"
         class="w-full h-full object-cover"
       >

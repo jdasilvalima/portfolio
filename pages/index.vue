@@ -12,11 +12,11 @@
         </p>
       </div>
       <!-- Project Image -->
-      <div class="h-1/2 bg-gray-200">
+      <div class="h-1/2">
         <img
-          :src="currentProject ? currentProject.images[0] : '/img/main/default.jpg'"
+          :src="currentProject ? currentProject.images[0] : '/img/main/default.png'"
           alt="Project Preview"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-contain"
         >
       </div>
     </div>
