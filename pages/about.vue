@@ -11,7 +11,7 @@
 
     <!-- Right Side - Content -->
     <div class="w-full sm:w-1/2 p-8 flex flex-col">
-      <div class="flex-grow space-y-8 max-w-md mx-auto">
+      <div class="flex-grow space-y-8 max-w-md mx-auto mb-20">
         <h1 class="text-4xl font-bold sm:mt-12">
           Hello !
         </h1>

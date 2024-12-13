@@ -3,15 +3,15 @@
     <div v-if="project" class="flex-grow flex flex-col sm:flex-row justify-items-stretch">
       <!-- Left Side - Gallery -->
       <div class="w-full sm:w-1/2 h-[50vh] sm:h-[calc(100vh-60px)] relative">
-        <img 
-          :src="project.images[currentImageIndex]" 
-          :alt="`${project.name} - Image ${currentImageIndex + 1}`" 
+        <img
+          :src="project.images[currentImageIndex]"
+          :alt="`${project.name} - Image ${currentImageIndex + 1}`"
           class="w-full h-full object-cover"
         />
 
         <!-- Gallery Navigation -->
-        <button 
-          @click="previousImage" 
+        <button
+          @click="previousImage"
           class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-200 transition-colors"
           aria-label="Previous image"
         >
@@ -33,7 +33,7 @@
 
       <!-- Right Side - Project Info -->
       <div class="w-full sm:w-1/2 p-8 flex flex-col sm:mt-12 justify-between">
-        <div class="max-w-md mx-auto w-full">
+        <div class="max-w-md mx-auto w-full mb-20">
           <div class="flex-grow">
             <!-- Project Title -->
             <h1 class="text-4xl font-bold mb-8">{{ project.name }}</h1>
@@ -126,7 +126,7 @@ import { useRoute } from 'vue-router'
 import projectsData from '~/data/projects.json'
 
 const route = useRoute()
-const currentImageIndex = ref(1)
+const currentImageIndex = ref(0)
 const projects = ref(projectsData)
 
 const project = computed(() => {
