@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col sm:flex-row flex-grow pt-[60px]">
     <!-- Left Side - Static for tablet and desktop -->
-    <div class="w-full sm:w-1/2 h-[calc(100vh-55vh)] sm:h-[calc(100vh-60px)] sm:overflow-hidden flex flex-col">
+    <div class="w-full sm:w-1/2 h-[calc(100vh-50vh)] sm:h-[calc(100vh-60px)] sm:overflow-hidden flex flex-col">
       <!-- Developer Info -->
-      <div class="h-1/2 p-4 sm:p-8 flex flex-col mt-6">
+      <div class="h-1/3 p-4 sm:p-8 flex flex-col mt-6">
         <h2 class="text-2xl sm:text-4xl font-bold mb-2">
           Jade DA SILVA LIMA
         </h2>
@@ -12,11 +12,11 @@
         </p>
       </div>
       <!-- Project Image -->
-      <div class="h-1/2">
+      <div class="h-2/3">
         <img
           :src="currentProject ? currentProject.mainImage : '/img/main/default.png'"
           alt="Project Preview"
-          class="w-full h-full object-contain"
+          class="w-full h-full object-cover"
         >
       </div>
     </div>
@@ -27,25 +27,24 @@
         v-for="project in projects"
         :key="project.id"
         :to="`/project/${project.id}`"
-        class="w-full sm:w-1/2 aspect-square relative cursor-pointer"
+        class="w-full sm:w-1/2 aspect-square relative cursor-pointer group"
         :style="{ backgroundColor: project.color }"
         @mouseover="currentProject = project"
         @mouseleave="currentProject = null"
       >
         <div
           class="absolute inset-0 flex items-center justify-center"
-          :class="{ 'sm:hover:bg-black/10': currentProject && currentProject.id === project.id }"
+          :class="{ 'sm:group-hover:bg-black/10': true }"
         >
           <div
             class="w-2/5 h-2/5 rounded-full transition-all duration-300 flex items-center justify-center overflow-hidden"
-            :class="currentProject && currentProject.id === project.id ? 'sm:bg-white' : 'bg-black'"
+            :class="{ 'sm:group-hover:bg-white': true, 'bg-black': true }"
           />
         </div>
         <div
           class="absolute bottom-4 left-4 text-white transition-opacity duration-300 flex flex-col"
           :class="{
-            'opacity-100': true,
-            'sm:opacity-0 sm:group-hover:opacity-100': currentProject && currentProject.id === project.id
+            'opacity-100 sm:opacity-0 sm:group-hover:opacity-100': true,
           }"
         >
           <span class="text-xl sm:text-2xl font-semibold">
