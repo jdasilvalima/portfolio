@@ -28,7 +28,7 @@
           </p>
         </div>
 
-        <div class="pt-8">
+        <div class="flex gap-6 pt-8">
           <a
             href="https://www.linkedin.com/in/jade-da-silva-lima/"
             target="_blank"
@@ -36,6 +36,14 @@
             class="text-black hover:opacity-70 transition-opacity font-medium"
           >
             LINKEDIN
+          </a>
+          <a
+            href="https://github.com/jdasilvalima"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black hover:opacity-70 transition-opacity font-medium"
+          >
+            GITHUB
           </a>
         </div>
       </div>
