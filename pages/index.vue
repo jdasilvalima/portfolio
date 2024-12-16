@@ -4,10 +4,10 @@
     <div class="w-full sm:w-1/2 h-[calc(100vh-50vh)] sm:h-[calc(100vh-60px)] sm:overflow-hidden flex flex-col">
       <!-- Developer Info -->
       <div class="h-1/3 p-4 sm:p-8 flex flex-col mt-6">
-        <h2 class="text-2xl sm:text-4xl font-bold mb-2">
-          Jade DA SILVA LIMA
+        <h2 class="text-3xl sm:text-5xl mb-2 name">
+          JADE DA SILVA LIMA
         </h2>
-        <p class="text-lg sm:text-xl text-gray-600">
+        <p class="text-lg sm:text-2xl text-gray-600">
           Software Developer
         </p>
       </div>
@@ -68,6 +68,10 @@ const currentProject = ref(null)
 </script>
 
 <style>
+.name {
+  font-family: 'PaperworkBlack', sans-serif;
+}
+
 @media (max-width: 639px) {
   body {
     overflow-y: auto;

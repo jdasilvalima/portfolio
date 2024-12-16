@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'PaperworkBlack';
+  src: url('@/assets/fonts/paperwork/paperwork_black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;

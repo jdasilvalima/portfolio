@@ -9,9 +9,8 @@
 This is a personal portfolio to showcase my projects, skills, and services.
 
 ### I.2 Goals
-WIP
-- Learn more about [Github Actions](https://github.com/features/actions)
 - Learn more about [Nuxt](https://nuxt.com/) and [NuxtDevTools](https://devtools.nuxt.com/)
+- Learn more about [Github Actions](https://github.com/features/actions)
 
 ## II. PROJECT SETUP
 ### II.1 Requirements and Instructions
@@ -19,101 +18,27 @@ WIP
 
 Clone this project
 ```sh
-    mkdir jdportfolio
-    git clone git@github.com:jdasilvalima/portfoliov2.git
+mkdir jdportfolio
+git clone git@github.com:jdasilvalima/portfoliov2.git
 ```
 
 Build and run locally :
 ```sh
-    docker build -t jd-portfolio-img .
-    docker run -p 3000:3000 --rm --name jd-portfolio-ctn jd-portfolio-img
+docker build -t jd-portfolio-img .
+
+docker run -p 3000:3000 --rm --name jd-portfolio-ctn jd-portfolio-img
 ```
 
 ### II.2 Run local tests
 [Nuxt Eslint](https://eslint.nuxt.com/)
 ```sh
-    npx @eslint/config-inspector
-    or
-    npm run lint
+npx @eslint/config-inspector
+or
+npm run lint
 ```
 
-## II.2 APPLICATION ARCHITECTURE
-WIP
+## III. REFERENCES
 
-# Nuxt Minimal Starter
-
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github
+* [Deployment documentation](https://nuxt.com/docs/getting-started/deployment) for Nuxt.js project.
+* [Uploading a SARIF file to GitHub](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github) . You can upload SARIF files generated outside GitHub and see code scanning alerts from third-party tools in your repository.
+* Font [Paperwork Black](https://fontain.org/paperwork/)
