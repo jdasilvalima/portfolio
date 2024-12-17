@@ -12,7 +12,7 @@
     <!-- Right Side - Content -->
     <div class="w-full sm:w-1/2 p-8 flex flex-col">
       <div class="flex-grow space-y-8 max-w-md mx-auto mb-20">
-        <h1 class="text-4xl font-bold sm:mt-12">
+        <h1 class="text-5xl sm:mt-12 name">
           Hello !
         </h1>
 
@@ -50,3 +50,9 @@
     </div>
   </div>
 </template>
+
+<style>
+.name {
+  font-family: 'PaperworkBlack', sans-serif;
+}
+</style>
