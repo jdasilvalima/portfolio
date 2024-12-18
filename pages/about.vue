@@ -19,7 +19,7 @@
         <div class="space-y-6 text-justify">
           <p class="text-gray-600 leading-relaxed">
             I'm Jade DA SILVA LIMA, a passionate software developer living in NYC.
-            I have 4 years of experience. I  build web applications that automate processes, enhance efficiency, and deliver actionable insights, making an1 impact on business performance.
+            I have 4 years of experience. I  build web applications that automate processes, enhance efficiency, and deliver actionable insights, making an impact on business performance.
           </p>
 
           <p class="text-gray-600 leading-relaxed">

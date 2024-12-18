@@ -32,66 +32,64 @@
       </div>
 
       <!-- Right Side - Project Info -->
-      <div class="w-full sm:w-1/2 p-8 flex flex-col sm:mt-12 justify-between">
-        <div class="max-w-md mx-auto w-full mb-20">
-          <div class="flex-grow">
-            <!-- Project Title -->
-            <h1 class="text-4xl font-bold mb-8">{{ project.name }}</h1>
+      <div class="w-full sm:w-1/2 p-8 sm:pt-16 sm:pb-8 max-w-2xl flex flex-col h-auto sm:h-[calc(100vh-60px)] mx-auto">
+        <!-- Project Name -->
+        <div class="flex-shrink-0 mb-8">
+          <h1 class="text-4xl font-bold">{{ project.name }}</h1>
+        </div>
 
-            <!-- Project Details -->
-            <div class="space-y-8">
-              <section>
-                <h2 class="text-sm font-bold mb-4">INTRODUCTION</h2>
-                <p class="text-gray-600 text-justify">[{{ project.type }}] - {{ project.introduction }}</p>
-              </section>
+        <!-- Scrollable Middle Section -->
+        <div class="flex-grow overflow-y-auto space-y-8 p-4">
+          <section>
+            <h2 class="text-sm font-bold mb-4">INTRODUCTION</h2>
+            <p class="text-gray-600 text-justify">[{{ project.type }}] - {{ project.introduction }}</p>
+          </section>
 
-              <section>
-                <h2 class="text-sm font-bold mb-4">GOALS</h2>
-                <p class="text-gray-600 text-justify">{{ project.goals }}</p>
-              </section>
+          <section>
+            <h2 class="text-sm font-bold mb-4">GOALS</h2>
+            <p class="text-gray-600 text-justify">{{ project.goals }}</p>
+          </section>
 
-              <section>
-                <h2 class="text-sm font-bold mb-4">TECHNOLOGIES</h2>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    v-for="tech in project.technologies"
-                    :key="tech"
-                    class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium text-gray-800 shadow-sm"
-                  >
-                    {{ tech }}
-                  </span>
-                </div>
-              </section>
-
-              <!-- Project Links -->
-              <div class="flex gap-6">
-                <a
-                  v-if="project.github"
-                  :href="project.github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:opacity-70 transition-opacity"
-                >
-                  GITHUB
-                </a>
-                <a
-                  v-if="project.website"
-                  :href="project.website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:opacity-70 transition-opacity"
-                >
-                  WEBSITE
-                </a>
-              </div>
+          <section>
+            <h2 class="text-sm font-bold mb-4">TECHNOLOGIES</h2>
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tech in project.technologies"
+                :key="tech"
+                class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+              >
+                {{ tech }}
+              </span>
             </div>
+          </section>
+
+          <!-- Project Links -->
+          <div class="flex gap-6">
+            <a
+              v-if="project.github"
+              :href="project.github"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-black hover:opacity-70 transition-opacity"
+            >
+              GITHUB
+            </a>
+            <a
+              v-if="project.website"
+              :href="project.website"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-black hover:opacity-70 transition-opacity"
+            >
+              WEBSITE
+            </a>
           </div>
         </div>
 
         <!-- Project Navigation -->
-        <div class="w-full border-t">
+        <div class="flex-shrink-0 w-full border-t mt-8">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center pt-8">
+            <div class="flex justify-between items-center pt-4">
               <NuxtLink
                 v-if="previousProject"
                 :to="`/project/${previousProject.id}`"

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col sm:flex-row flex-grow pt-[60px]">
-    <!-- Left Side - Static for tablet and desktop -->
+    <!-- Left Side -->
     <div class="w-full sm:w-1/2 h-[calc(100vh-50vh)] sm:h-[calc(100vh-60px)] sm:overflow-hidden flex flex-col">
       <!-- Developer Info -->
       <div class="h-1/3 p-4 sm:p-8 flex flex-col mt-6">
