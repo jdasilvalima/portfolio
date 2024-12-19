@@ -18,7 +18,7 @@
     "type": "Client Project",
     "color": "#4B4BF7",
     "mainImage": "/img/main/project2.png",
-    "images": ["/img/projects/project2-2.png", "/img/projects/project2-3.png", "/img/projects/project2-4.png"],
+    "images": ["/img/projects/project2-2.gif", "/img/projects/project2-3.png", "/img/projects/project2-4.png"],
     "introduction": "Website to showcase a photographer's work with creative coding.",
     "goals": "The goal for this project was to create an interactive website while deepening my knowledge of modern frontend tools and techniques : Enhance frontend development skills using Nuxt.js | Explore smooth scrolling techniques with Lenis | Implement dynamic animations with GSAP to create an engaging user experience | Get started with WebGL and Three.js to explore 3D web graphics.",
     "technologies": ["Nuxt.js", "Gsap", "Lenis", "Three.js", "WebGL"],
