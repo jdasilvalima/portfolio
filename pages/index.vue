@@ -55,7 +55,7 @@
       <div class="w-1/2 h-[calc(100vh-60px)] overflow-hidden flex flex-col">
         <!-- Developer Info -->
         <div class="h-1/3 p-8 flex flex-col">
-          <h2 class="text-5xl mb-2 name">
+          <h2 class="text-5xl mb-2 mt-12 name">
             JADE DA SILVA LIMA
           </h2>
           <p class="text-2xl text-gray-600">
