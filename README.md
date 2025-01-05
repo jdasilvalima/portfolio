@@ -43,3 +43,4 @@ npm run lint
 * [Uploading a SARIF file to GitHub](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github) . You can upload SARIF files generated outside GitHub and see code scanning alerts from third-party tools in your repository.
 * Font [Paperwork Black](https://fontain.org/paperwork/)
 * On-Scroll Animation Ideas for [Sticky Sections](https://tympanus.net/codrops/2024/01/31/on-scroll-animation-ideas-for-sticky-sections/)
+* Nuxt [Transition](https://nuxt.com/docs/getting-started/transitions)
